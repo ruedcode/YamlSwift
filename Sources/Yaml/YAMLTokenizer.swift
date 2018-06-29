@@ -85,7 +85,7 @@ private let tokenPatterns: [TokenPattern] = [
   (.infinityP, Yaml.Regex.regex("^\\+?\\.(inf|Inf|INF)\(finish)")),
   (.infinityN, Yaml.Regex.regex("^-\\.(inf|Inf|INF)\(finish)")),
   (.nan, Yaml.Regex.regex("^\\.(nan|NaN|NAN)\(finish)")),
-  (.int, Yaml.Regex.regex("^[-+]?[0-9]+\(finish)")),
+  (.int, Yaml.Regex.regex("^[-+]?[0-9]{1,9}\(finish)")),
   (.intOct, Yaml.Regex.regex("^0o[0-7]+\(finish)")),
   (.intHex, Yaml.Regex.regex("^0x[0-9a-fA-F]+\(finish)")),
   (.intSex, Yaml.Regex.regex("^[0-9]{2}(:[0-9]{2})+\(finish)")),
